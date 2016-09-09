@@ -243,3 +243,30 @@ a {
 @media screen and (max-width: 42em) {
   .site-footer {
     font-size: 0.9rem; } }
+
+#mc_embed_signup .button:hover{
+  background-color: #15a5ba;
+}
+
+#mc_embed_signup .button {
+  background-color: #159957;
+}
+
+#mc_embed_signup form{
+  padding: 10px 0 10px 0;
+}
+
+#mc_embed_signup{
+  background:#fff; 
+  clear:left; 
+  font:14px Helvetica,Arial,sans-serif;  
+  width:375px;
+  
+}
+#mc_embed_signup label {
+    color: #159957;
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    margin-top: 2rem;
+    font-weight: normal;
+    font-size: 1.5em;
+}
