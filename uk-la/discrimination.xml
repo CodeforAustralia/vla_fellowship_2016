@@ -1,0 +1,112 @@
+<category name="Discrimination">
+
+
+<question id="q1">
+	<word><![CDATA[     Have you been treated unfairly (discriminated against) because of your:    ]]></word>
+<hint> <![CDATA[    <ul><li>sex</li><li>race</li><li>age</li><li>disability</li><li>religion or beliefs</li><li>sexual orientation</li><li>being married or a civil partner</li><li>being pregnant or having a child</li><li>being or becoming a transsexual person</li></ul>    ]]></hint>
+	<word_done><![CDATA[     Have you been treated unfairly because of your sex, age, race or other characteristic?    ]]></word_done>	
+<options>
+		<option id="o1" value="yes" target="f1" />
+		<option id="o2" value="no" target="r3" />
+	</options>
+</question>
+
+
+<!-- BEGIN FINANCIAL ELIGIBILITY -->
+<finance id="f1">
+	<word><![CDATA[     Are you or your partner (husband, wife, civil partner or a partner you live with) on any of these benefits?:    ]]></word>
+	<hint> <![CDATA[    <ul><li>Income Support</li><li>Jobseeker's Allowance (income-based)</li><li>Employment and Support Allowance (income-based)</li><li>Pension Credit - Guarantee Credit</li><li>Universal Credit</li></ul>    ]]></hint>
+	<word_done><![CDATA[     Are you or your partner on certain benefits?    ]]></word_done>
+	<options>
+		<option id="o1" value="yes" target="f3" />
+		<option id="o2" value="no" target="f2" />
+	</options>
+</finance>
+
+<finance id="f2">
+	<word><![CDATA[     Do you and your partner have a combined income of more than &#163;2,657 a month before tax?   ]]></word>
+	<hint> <![CDATA[     (If you have more than 4 children, add &#163;222 to the figure above for the 5th and each additional child.)   ]]></hint>
+	<options>
+		<option id="o1" value="yes" target="r2" />
+		<option id="o2" value="no" target="f3" />
+	</options>
+</finance>
+
+<finance id="f3">
+	<word><![CDATA[      Are you or your partner 60 or over?   ]]></word>
+	<options>
+		<option id="o1" value="yes" target="r1" />
+		<option id="o2" value="no" target="f4" />
+	</options>
+</finance>
+
+<finance id="f4">
+	<word><![CDATA[      Do you and your partner have more than &#163;8,000 in savings, shares, investments or property?   ]]></word>
+<hint> <![CDATA[     If you own your home, include any equity you have over &#163;100,000.   ]]></hint>
+	<options>
+		<option id="o1" value="yes" target="r2" />
+		<option id="o2" value="no" target="r1" />
+	</options>
+</finance>
+
+
+
+<!-- BEGIN OUTCOMES (DISCRIMINATION) -->
+
+<outcome id="r1" result="eligible">
+	<word><![CDATA[<h2 class="result-title">You may be able to get legal aid to pay for help and advice.</h2>
+
+<p><strong> Contact Civil Legal Advice</strong></p>
+
+<p><strong>Phone:</strong> 0345 345 4 345
+<br><strong>Text:</strong> 'legalaid' and your name to 80010
+<br>Monday to Friday 9am to 8pm
+<br>Saturday 9am to 12:30pm
+<br><a href="https://www.gov.uk/call-charges" onClick="trackOutboundLink(this, 'Outbound Links', 'www.gov.uk/call-charges'); return false;">Find out about call charges</a></p>
+
+<p><a href="https://www.gov.uk/check-if-civil-legal-advice-can-help-you" onClick="trackOutboundLink(this, 'Outbound Links', 'www.gov.uk/check-if-civil-legal-advice-can-help-you'); return false;">Check if you qualify financially for help from Civil Legal Advice</a></p> ]]></word>
+
+
+</outcome>
+
+
+<outcome id="r2" result="not eligible">
+
+	<word><![CDATA[<h2 class="result-title">It looks like you won't be able to get legal aid.</h2>
+
+<p>You may be able to get free help from:</p>
+
+<ul>
+<li><a href="http://www.equalityadvisoryservice.com" onClick="trackOutboundLink(this, 'Outbound Links', 'www.equalityadvisoryservice.com'); return false;">Equality Advisory Support Service</a></li>
+<li><a href="http://www.lawcentres.org.uk/i-am-looking-for-advice" onClick="trackOutboundLink(this, 'Outbound Links', 'www.lawcentres.org.uk/i-am-looking-for-advice'); return false;">Law Centres Network</a></li>
+</ul>
+
+<p>You can also <a href="http://solicitors.lawsociety.org.uk/" onClick="trackOutboundLink(this, 'Outbound Links', 'solicitors.lawsociety.org.uk'); return false;">Law Society</a></li> search for a solicitor in your area - you will have to pay for advice.</p> ]]></word>
+
+
+</outcome>
+
+
+<outcome id="r3" result="not eligible">
+
+	<word><![CDATA[<h2 class="result-title">It looks like you won't be able to get legal aid.</h2>
+
+<p>This is because legal aid doesn't cover your type of problem.*</p>
+
+<p>You can get free help from:</p>
+
+<ul>
+<li><a href="http://www.equalityadvisoryservice.com" onClick="trackOutboundLink(this, 'Outbound Links', 'www.equalityadvisoryservice.com'); return false;">Equality Advisory Support Service</a></li>
+<li><a href="http://www.lawcentres.org.uk/i-am-looking-for-advice" onClick="trackOutboundLink(this, 'Outbound Links', 'www.lawcentres.org.uk/i-am-looking-for-advice'); return false;">Law Centres Network</a></li>
+</ul>
+
+<p>You can also <a href="http://solicitors.lawsociety.org.uk/" onClick="trackOutboundLink(this, 'Outbound Links', 'solicitors.lawsociety.org.uk'); return false;">Law Society</a></li> search for a solicitor in your area - you will have to pay for advice.</p> ]]></word>
+
+<footnote><![CDATA[ <p class="note">*
+	Legal aid may still be available in exceptional cases. You can ask a legal adviser if an application might succeed in your case and how to apply. You can also <a href="https://www.gov.uk/legal-aid-apply-for-exceptional-case-funding">apply directly to the Legal Aid Agency</a>.
+	</p>]]>
+</footnote>
+</outcome>
+
+
+</category>

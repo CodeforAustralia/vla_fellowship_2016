@@ -1,0 +1,284 @@
+
+<category name="Family">
+
+<question id="q0">
+	<word><![CDATA[     Are you under 18?  ]]></word>
+
+<options>
+		<option id="o1" value="yes" target="r1" />
+		<option id="o2" value="no" target="q1" />
+	</options>
+</question>
+
+<question id="q1">
+	<word><![CDATA[     Has your partner hurt, abused or threatened you or your child?  ]]></word>
+<hint> <![CDATA[     Abuse can mean physical or mental abuse, including violence, sexual abuse or neglect.   ]]></hint>	
+<options>
+		<option id="o1" value="yes" target="q2" />
+		<option id="o2" value="no" target="q4" />
+	</options>
+</question>
+
+
+	<question id="q2">
+		<word><![CDATA[     Do you want advice on getting a court order to protect you or your child?  ]]></word>
+		<options>
+			<option id="o1" value="yes" target="r1" />
+			<option id="o2" value="no" target="q3" />
+		</options>
+	</question>
+
+
+	<question id="q3">
+		<word><![CDATA[     Are you getting a divorce, splitting up with a partner or in a dispute with them about children, money or property? ]]></word>
+		<options>
+			<option id="o1" value="yes" target="f1" />
+			<option id="o2" value="no" target="q7" />
+		</options>
+	</question>
+
+
+<question id="q4">
+	<word><![CDATA[     Are you getting a divorce, splitting up with a partner or in a dispute with them about children, money or property? ]]></word>
+	<options>
+		<option id="o1" value="yes" target="q5" />
+		<option id="o2" value="no" target="q6" />
+	</options>
+</question>
+
+
+<question id="q5">
+	<word><![CDATA[     Would you like help working out an agreement before getting lawyers involved or going to court?    ]]></word>
+	<options>
+		<option id="o1" value="yes" target="f6" jump="FINANCIAL ELIGIBILITY 2" />
+		<option id="o2" value="no" target="r8" />
+		</options>
+	</question>
+
+
+<question id="q6">
+	<word><![CDATA[     Are you worried that a child in your family might be taken into care, or unhappy with how they're being looked after in care?      ]]></word>
+	<options>
+		<option id="o1" value="yes" target="r7" />
+		<option id="o2" value="no" target="r8" />
+	</options>
+</question>
+
+<question id="q7">
+	<word><![CDATA[     Are you worried that a child in your family might be taken into care, or unhappy with how they're being looked after in care?      ]]></word>
+	<options>
+		<option id="o1" value="yes" target="r7" />
+		<option id="o2" value="no" target="r4" />
+	</options>
+</question>
+
+
+
+<!-- BEGIN FINANCIAL ELIGIBILITY 1 -->
+
+<finance id="f1">
+	<word><![CDATA[     Are you on any of these benefits?:    ]]></word>
+	<hint> <![CDATA[    <ul><li>Income Support</li><li>Jobseeker's Allowance (income-based)</li><li>Employment and Support Allowance (income-based)</li><li>Pension Credit - Guarantee Credit</li><li>Universal Credit</li></ul>    ]]></hint>
+	<word_done><![CDATA[     Are you or your partner on certain benefits?    ]]></word_done>
+	<options>
+		<option id="o1" value="yes" target="f3" />
+		<option id="o2" value="no" target="f2" />
+	</options>
+</finance>
+
+<finance id="f2">
+	<word><![CDATA[     Do you earn more than &#163;2,657 a month before tax?  ]]></word>
+	<hint> <![CDATA[     (If you have more than 4 children, add &#163;222 to the figure above for the 5th and each additional child.)   ]]></hint>
+	<options>
+		<option id="o1" value="yes" target="r3" />
+		<option id="o2" value="no" target="f3" />
+	</options>
+</finance>
+
+<finance id="f3">
+	<word><![CDATA[      Are you 60 or over?   ]]></word>
+	<options>
+		<option id="o1" value="yes" target="r2" />
+		<option id="o2" value="no" target="f4" />
+	</options>
+</finance>
+
+<finance id="f4">
+<word><![CDATA[      Do you have more than &#163;8,000 in savings, shares, investments or property?   ]]></word>
+	<hint> <![CDATA[     If you own your home, include any equity you have over &#163;100,000.   ]]></hint>
+	<options>
+		<option id="o1" value="yes" target="f5" />
+		<option id="o2" value="no" target="r2" />
+	</options>
+</finance>
+
+
+<finance id="f5">
+	<word><![CDATA[      Are you in a dispute with your partner about this money or property?  ]]></word>
+	<options>
+		<option id="o1" value="yes" target="r2" />
+		<option id="o2" value="no" target="r3" />
+	</options>
+</finance>
+
+
+
+<!-- BEGIN FINANCIAL ELIGIBILITY 2 -->
+<finance id="f6">
+	<word><![CDATA[     Are you or your partner (husband, wife, civil partner or a partner you live with) on any of these benefits?:    ]]></word>
+	<hint> <![CDATA[    <ul><li>Income Support</li><li>Jobseeker's Allowance (income-based)</li><li>Employment and Support Allowance (income-based)</li><li>Pension Credit - Guarantee Credit</li><li>Universal Credit</li></ul>    ]]></hint>
+	<word_done><![CDATA[     Are you or your partner on certain benefits?    ]]></word_done>
+	<options>
+		<option id="o1" value="yes" target="f8" />
+		<option id="o2" value="no" target="f7" />
+	</options>
+</finance>
+
+<finance id="f7">
+	<word><![CDATA[     Do you earn more than &#163;2,657 a month before tax?   ]]></word>
+	<hint> <![CDATA[     (If you have more than 4 children, add &#163;222 to the figure above for the 5th and each additional child.)   ]]></hint>
+
+	<options>
+		<option id="o1" value="yes" target="r6" />
+		<option id="o2" value="no" target="f8" />
+	</options>
+</finance>
+
+<finance id="f8">
+	<word><![CDATA[      Are you or your partner 60 or over?   ]]></word>
+	<options>
+		<option id="o1" value="yes" target="r5" />
+		<option id="o2" value="no" target="f9" />
+	</options>
+</finance>
+
+<finance id="f9">
+	<word><![CDATA[      Do you and your partner have more than &#163;8,000 in savings, shares, investments or property?   ]]></word>
+	<hint> <![CDATA[     If you own your home, include any equity you have over &#163;100,000.   ]]></hint>
+	<options>
+		<option id="o1" value="yes" target="f10" />
+		<option id="o2" value="no" target="r5" />
+	</options>
+</finance>
+
+<finance id="f10">
+	<word><![CDATA[      Are you in a dispute with your partner about this money or property?   ]]></word>
+	<options>
+		<option id="o1" value="yes" target="r5" />
+		<option id="o2" value="no" target="r6" />
+	</options>
+</finance>
+
+
+<!-- BEGIN OUTCOMES (FAMILY) -->
+<outcome id="r1" postcode="true" result="eligible" category="MAT">
+	<word>
+    <![CDATA[<h2 class="result-title">You may be able to get legal aid to pay for help and advice.</h2>
+
+<p><strong> Contact Civil Legal Advice</strong></p>
+
+<p><strong>Phone:</strong> 0345 345 4 345
+<br><strong>Text:</strong> 'legalaid' and your name to 80010
+<br>Monday to Friday 9am to 8pm
+<br>Saturday 9am to 12:30pm
+<br><a href="https://www.gov.uk/call-charges" onClick="trackOutboundLink(this, 'Outbound Links', 'www.gov.uk/call-charges'); return false;">Find out about call charges</a></p>
+
+<p><a href="https://www.gov.uk/check-if-civil-legal-advice-can-help-you" onClick="trackOutboundLink(this, 'Outbound Links', 'www.gov.uk/check-if-civil-legal-advice-can-help-you'); return false;">Check if you qualify financially for help from Civil Legal Advice</a></p> ]]></word>
+
+</outcome>
+
+<outcome id="r2" postcode="true" result="eligible" category="MAT">
+	<word><![CDATA[<h2 class="result-title">You may be able to get legal aid to pay for help and advice.</h2>
+
+<p><a href="https://www.gov.uk/check-if-civil-legal-advice-can-help-you" onClick="trackOutboundLink(this, 'Outbound Links', 'www.gov.uk/check-if-civil-legal-advice-can-help-you'); return false;">Check if you qualify financially for help from Civil Legal Advice</a> or contact a legal adviser or solicitor in your area.</p>
+
+<p>You'll need to give evidence of the violence or abuse - eg a court order or letter from a doctor.</p> ]]></word>
+
+</outcome>
+
+
+<outcome id="r3" postcode="true" law-society="true" result="not eligible">
+
+	<word><![CDATA[<h2 class="result-title">It looks like you won't be able to get legal aid.</h2>
+
+<p>You may be able to get free help from a local <a href="https://www.victimsinformationservice.org.uk" onClick="trackOutboundLink(this, 'Outbound Links', 'victimservices.justice.gov.uk'); return false;">victims service</a>.</p> 
+
+<p>You can also search for a solicitor in your area - you will have to pay for advice.</p>]]></word>
+
+</outcome>
+
+<outcome id="r4" postcode="true" law-society="true" result="not eligible">
+	<word><![CDATA[<h2 class="result-title">It looks like you won't be able to get legal aid.</h2>
+
+<p>This is because legal aid doesn't cover your type of problem.*</p>
+
+<p>You may be able to get free help from a local <a href="https://www.victimsinformationservice.org.uk" onClick="trackOutboundLink(this, 'Outbound Links', 'victimservices.justice.gov.uk'); return false;">victims service</a>.</p>
+
+<p>You can also search for a solicitor in your area - you will have to pay for advice.</p>]]></word>
+
+<footnote><![CDATA[ <p class="note">*
+	Legal aid may still be available in exceptional cases. You can ask a legal adviser if an application might succeed in your case and how to apply. You can also <a href="https://www.gov.uk/legal-aid-apply-for-exceptional-case-funding">apply directly to the Legal Aid Agency</a>.
+	</p>]]>
+</footnote>
+</outcome>
+
+
+<outcome id="r5" postcode="true" result="eligible" category="FMED">
+	<word><![CDATA[<h2 class="result-title">You may be able to get legal aid to pay for help solving your dispute.</h2>
+
+<p>This won't cover legal advice, but could pay for 'mediation' - help working out arrangements about children and finances with your ex-partner.</p>
+
+<p>Contact a mediation service in your area for more information.</p> ]]></word> 
+</outcome>
+
+
+<outcome id="r6" postcode="true" result="not eligible">
+	<word><![CDATA[<h2 class="result-title">It looks like you won't be able to get legal aid.</h2>
+
+
+<p>You could contact a local <a href="http://www.familymediationcouncil.org.uk/find-local-mediator/" onClick="trackOutboundLink(this, 'Outbound Links', 'www.familymediationcouncil.org.uk/find-local-mediator'); return false;">mediation service</a>, which could help you work out arrangements about children and finances with your ex-partner.</p>
+
+<p>This is usually cheaper than using solicitors.</p> ]]></word>
+
+</outcome>
+
+
+<outcome id="r7" postcode="true" result="eligible" category="MAT">
+	<word><![CDATA[<h2 class="result-title">You may be able to get legal aid to pay for help and advice.</h2>
+
+<p><strong> Contact Civil Legal Advice</strong></p>
+
+<p><strong>Phone:</strong> 0345 345 4 345
+<br><strong>Text:</strong> 'legalaid' and your name to 80010
+<br>Monday to Friday 9am to 8pm
+<br>Saturday 9am to 12:30pm
+<br><a href="https://www.gov.uk/call-charges" onClick="trackOutboundLink(this, 'Outbound Links', 'www.gov.uk/call-charges'); return false;">Find out about call charges</a></p>
+
+<p><a href="https://www.gov.uk/check-if-civil-legal-advice-can-help-you" onClick="trackOutboundLink(this, 'Outbound Links', 'www.gov.uk/check-if-civil-legal-advice-can-help-you'); return false;">Check if you qualify financially for help from Civil Legal Advice</a></p>
+
+<p>You can also contact a legal adviser or solicitor in your area.</p> ]]></word>
+</outcome>
+
+
+
+<outcome id="r8" postcode="true" law-society="true" result="not eligible">
+
+	<word><![CDATA[<h2 class="result-title">It looks like you won't be able to get legal aid.</h2>
+
+<p>This is because legal aid doesn't cover your type of problem.*</p>
+
+<p>You may be able to get free help from:</p>
+
+<ul>
+<li> <a href="http://www.sortingoutseparation.org.uk" onClick="trackOutboundLink(this, 'Outbound Links', 'www.sortingoutseparation.org.uk'); return false;">Sorting out Separation</a></li>
+<li><a href="http://www.childrenslegalcentre.com" onClick="trackOutboundLink(this, 'Outbound Links', 'www.childrenslegalcentre.com'); return false;">Coram Children's Legal Centre</a></li>
+<li><a href="http://www.adviceguide.org.uk" onClick="trackOutboundLink(this, 'Outbound Links', 'www.adviceguide.org.uk'); return false;">Citizens Advice</a></li></ul>
+
+<p>You can also search for a solicitor in your area - you will have to pay for advice.</p>]]></word>
+<footnote><![CDATA[ <p class="note">*
+	Legal aid may still be available in exceptional cases. You can ask a legal adviser if an application might succeed in your case and how to apply. You can also <a href="https://www.gov.uk/legal-aid-apply-for-exceptional-case-funding">apply directly to the Legal Aid Agency</a>.
+	</p>]]>
+</footnote>
+</outcome>
+
+</category>

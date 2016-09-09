@@ -1,0 +1,118 @@
+<category name="Welfare benefits">
+
+<question id="q1">
+	<word><![CDATA[     Have you appealed against a benefits decision?    ]]></word>
+	<options>
+		<option id="o1" value="yes" target="q2" />
+		<option id="o2" value="no" target="r3" />
+	</options>
+</question>
+
+
+<question id="q2">
+	<word><![CDATA[     Has your case been heard by a social security tribunal?     ]]></word>
+	<options>
+		<option id="o1" value="yes" target="q3" />
+		<option id="o2" value="no" target="r3" />
+	</options>
+</question>
+
+<question id="q3">
+	<word><![CDATA[     Are you now appealing against the tribunal's decision?     ]]></word>
+	<options>
+		<option id="o1" value="yes" target="f1" />
+		<option id="o2" value="no" target="r3" />
+	</options>
+</question>
+
+
+<!-- BEGIN FINANCIAL ELIGIBILITY -->
+<finance id="f1">
+	<word><![CDATA[     Are you or your partner (husband, wife, civil partner or a partner you live with) on any of these benefits?:    ]]></word>
+	<hint> <![CDATA[    <ul><li>Income Support</li><li>Jobseeker's Allowance (income-based)</li><li>Employment and Support Allowance (income-based)</li><li>Pension Credit - Guarantee Credit</li><li>Universal Credit</li></ul>    ]]></hint>
+	<word_done><![CDATA[     Are you or your partner on certain benefits?    ]]></word_done>
+	<options>
+		<option id="o1" value="yes" target="f3" />
+		<option id="o2" value="no" target="f2" />
+	</options>
+</finance>
+
+<finance id="f2">
+	<word><![CDATA[     Do you and your partner have a combined income of more than &#163;2,657 a month before tax?   ]]></word>
+	<hint> <![CDATA[     (If you have more than 4 children, add &#163;222 to the figure above for the 5th and each additional child.)   ]]></hint>
+	<options>
+		<option id="o1" value="yes" target="r2" />
+		<option id="o2" value="no" target="f3" />
+	</options>
+</finance>
+
+<finance id="f3">
+	<word><![CDATA[      Are you or your partner 60 or over?   ]]></word>
+	<options>
+		<option id="o1" value="yes" target="r1" />
+		<option id="o2" value="no" target="f4" />
+	</options>
+</finance>
+
+<finance id="f4">
+		<word><![CDATA[      Do you and your partner have more than &#163;8,000 in savings, shares, investments or property?   ]]></word>
+<hint> <![CDATA[     If you own your home, include any equity you have over &#163;100,000.   ]]></hint>
+	<options>
+		<option id="o1" value="yes" target="r2" />
+		<option id="o2" value="no" target="r1" />
+	</options>
+</finance>
+
+
+
+<!-- BEGIN OUTCOMES (WELFARE) -->
+
+<outcome id="r1" postcode="true" result="eligible" category="WB">
+	<word><![CDATA[
+
+<h2 class="result-title">You may be able to get legal aid to pay for help and advice.</h2>
+
+<p>Contact a legal adviser in your area for more information.</p>
+
+		]]></word>
+
+</outcome>
+
+<outcome id="r2" postcode="true" law-society="true" result="not eligible">
+
+	<word><![CDATA[ <h2 class="result-title">It looks like you won't be able to get legal aid.</h2>
+
+<p>You may be able to get free help from:</p>
+
+<ul>
+<li><a href="http://www.adviceguide.org.uk" onClick="trackOutboundLink(this, 'Outbound Links', 'www.adviceguide.org.uk'); return false;">Citizens Advice</a></li>
+<li><a href="http://www.lawcentres.org.uk/" onClick="trackOutboundLink(this, 'Outbound Links', 'www.lawcentres.org.uk'); return false;">Law Centres Network</a></li>
+<li><a href="http://probonoaccess.lawworks.org.uk/" onClick="trackOutboundLink(this, 'Outbound Links', 'probonoaccess.lawworks.org.uk'); return false;">LawWorks</a></li>
+</ul>
+
+<p>You can also search for a solicitor in your area - you will have to pay for advice.</p> ]]></word>
+
+</outcome>
+
+<outcome id="r3" postcode="true" law-society="true" result="not eligible">
+
+		<word><![CDATA[ <h2 class="result-title"> It looks like you won't be able to get legal aid.</h2>
+
+<p>This is because legal aid doesn't cover your type of problem.*</p>
+
+<p>You may be able to get free help from:</p>
+
+<ul>
+<li><a href="http://www.adviceguide.org.uk" onClick="trackOutboundLink(this, 'Outbound Links', 'www.adviceguide.org.uk'); return false;">Citizens Advice</a></li>
+<li><a href="http://www.lawcentres.org.uk/" onClick="trackOutboundLink(this, 'Outbound Links', 'www.lawcentres.org.uk'); return false;">Law Centres Network</a></li>
+<li><a href="http://probonoaccess.lawworks.org.uk/" onClick="trackOutboundLink(this, 'Outbound Links', 'probonoaccess.lawworks.org.uk'); return false;">LawWorks</a></li>
+</ul> 
+
+<p>You can also search for a solicitor in your area - you will have to pay for advice.</p> ]]></word>
+<footnote><![CDATA[ <p class="note">*
+	Legal aid may still be available in exceptional cases. You can ask a legal adviser if an application might succeed in your case and how to apply. You can also <a href="https://www.gov.uk/legal-aid-apply-for-exceptional-case-funding">apply directly to the Legal Aid Agency</a>.
+	</p>]]>
+</footnote>
+</outcome>
+
+</category>
