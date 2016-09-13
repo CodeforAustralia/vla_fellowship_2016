@@ -100,7 +100,7 @@
         </div>
     </header>          
    <div id="global-cookie-message">
-      <p>This website uses cookies to make the site simpler. <a href="http://www.gov.uk/support/cookies">Find out more about cookies</a></p>
+      <p>This website uses cookies to make the site simpler. <a href="#">Find out more about cookies</a></p>
    </div>
    <div id="global-breadcrumb" class="header-context">
       <nav role="navigation">
