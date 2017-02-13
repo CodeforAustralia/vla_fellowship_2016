@@ -6,9 +6,8 @@
 </p>
 <h2>Meet the Team</h2>
 
-|   |  |
 | ------------- | ------------- |
-| <img src="https://trello-avatars.s3.amazonaws.com/1e63311991cc0e61db15a750a4e1b8f2/170.png" width="200" heigh="200"/>  | `Michael Calle` is a product manager and entrepreneur who is passionate about user centered design and technological disruption. With a background in marketing, Michael has spent the last few years on the entrepreneurial path as a cofounder at First Press Wellness and before that as product manager at tech startup Attendly. [LinkedIn](https://www.linkedin.com/in/michaelcalle)   |
+| <img src="https://trello-avatars.s3.amazonaws.com/1e63311991cc0e61db15a750a4e1b8f2/170.png" width="200" heigh="200"/>  | `Michael Calle` is a product manager and entrepreneur who is passionate about user centered design and technological disruption. With a background in marketing, Michael has spent the last few years on the entrepreneurial path and as a product manager within Melbourne's startup scene. [LinkedIn](https://www.linkedin.com/in/michaelcalle)   |
 | <img src="https://trello-attachments.s3.amazonaws.com/57881f8a10f2787c346b13bd/500x500/d9f3609d93be1faa77248c5e10108491/profile_pic.jpg" width="200" heigh="200"/>  | `Rikke Winther-Sørensen` is a Danish product design engineer with a passion for product development and design focusing on context and user experience. Working as a technical consultant for Siemens Industry Software she implemented and customized software solutions for clients in the Oil & Gas and Energy industries.    [LinkedIn](https://www.linkedin.com/in/rikkewin) |
 | <img src="https://trello-attachments.s3.amazonaws.com/5795b54a221de90af533202b/1431x1489/35ba81fe561535ba5ee84e6f553beac3/Christian_Arevalo.jpeg" width="200" heigh="200"/>  | `Christian Arévalo` is a Colombian software engineer who is passionate about web development technologies. He is a master of PHP, Javascript, and MYSQL. Working for Ennovva he was a team leader in the Innovation Technology team. He's always exploring and learning new web-based technologies.   [LinkedIn](https://au.linkedin.com/in/christianaq)|
 
